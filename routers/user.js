@@ -62,13 +62,5 @@ router.post('/endBraek', async(req, res)=>{
 
 
 
-router.get('/test', (req,res)=>{
-    res.send({
-        name:'Michael',
-        lastName:'Miller'
-    })
-})
-
-
 module.exports = router
 
