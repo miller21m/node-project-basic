@@ -42,14 +42,15 @@ export default {
         id:this.userId
       })
       .then((res)=>{
+        this.somthing()
         console.log(res);
         this.error = false
         this.displayOptions = true
+        
       })
       .catch(error=>{
-        console.log(error);
+        console.log('This is error: ' + error);
         this.error = true
-
       })
     },
     startWork(){
@@ -98,7 +99,7 @@ export default {
       .catch((error)=>{
         console.log(error);
       })
-    }
+    },
   }
 }
 </script>
